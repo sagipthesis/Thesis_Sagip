@@ -24,7 +24,7 @@ public class Barangay_Registration extends AppCompatActivity {
         SubmitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Barangay_Registration.this, MainActivity.class);
+                Intent intent = new Intent(Barangay_Registration.this, ID_Verification.class);
                 startActivity(intent);
             }
         });

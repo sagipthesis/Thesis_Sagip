@@ -24,7 +24,7 @@ public class Register_Rescuer_Page extends AppCompatActivity {
         SubmitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Register_Rescuer_Page.this, Rescuer_Home_Page.class);
+                Intent intent = new Intent(Register_Rescuer_Page.this, ID_Verification.class);
                 startActivity(intent);
 
             }

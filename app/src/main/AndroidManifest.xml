@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Thesis_Sagip"
         tools:targetApi="31">
         <activity
+            android:name=".ID_Verification"
+            android:exported="false" />
+        <activity
             android:name=".Hospital_Home_Page"
             android:exported="false" />
         <activity

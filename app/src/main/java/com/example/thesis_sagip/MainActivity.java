@@ -8,9 +8,6 @@ import android.widget.Button;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         CardView GoToRescuerRegister = findViewById(R.id.register_rescue);
         CardView GoToHospitalRegister = findViewById(R.id.hospital_register);
         CardView GoToBarangayRegister = findViewById(R.id.brgy_register);
-        Button SubmitButton = findViewById(R.id.cont_btn);
+        Button SubmitButton = findViewById(R.id.senior);
 
         GoToRescuerRegister.setOnClickListener(new View.OnClickListener() {
             @Override

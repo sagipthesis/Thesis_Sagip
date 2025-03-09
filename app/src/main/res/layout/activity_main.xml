@@ -129,8 +129,8 @@
             android:visibility="gone"
             android:indeterminateTint="#3E69E0" />
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/cont_btn"
+        <Button
+            android:id="@+id/senior"
             android:layout_width="match_parent"
             android:layout_height="56dp"
             android:layout_marginTop="24dp"
