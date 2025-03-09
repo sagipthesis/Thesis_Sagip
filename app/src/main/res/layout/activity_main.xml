@@ -158,10 +158,10 @@
 
             <!-- Feature 1 -->
             <com.google.android.material.card.MaterialCardView
+                android:id="@+id/brgy_register"
                 style="@style/FeatureCardStyle">
 
-                <LinearLayout
-                    style="@style/FeatureLayoutStyle">
+                <LinearLayout style="@style/FeatureLayoutStyle">
 
                     <ImageView
                         style="@style/FeatureIconStyle"
@@ -175,11 +175,11 @@
 
                         <TextView
                             style="@style/FeatureTitleStyle"
-                            android:text="Senior" />
+                            android:text="Barangay" />
 
                         <TextView
                             style="@style/FeatureDescriptionStyle"
-                            android:text="Call for emergency help" />
+                            android:text="Monitor your Area" />
                     </LinearLayout>
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
@@ -214,10 +214,10 @@
 
             <!-- Feature 3 -->
             <com.google.android.material.card.MaterialCardView
+                android:id="@+id/hospital_register"
                 style="@style/FeatureCardStyle">
 
-                <LinearLayout
-                    style="@style/FeatureLayoutStyle">
+                <LinearLayout style="@style/FeatureLayoutStyle">
 
                     <ImageView
                         style="@style/FeatureIconStyle"

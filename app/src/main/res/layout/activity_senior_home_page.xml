@@ -28,7 +28,6 @@
         android:text="HELP"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:backgroundTint="@color/red"
         android:textColor="@android:color/white"
         android:shape="oval"
         app:layout_constraintTop_toBottomOf="@id/seniorInfo"
