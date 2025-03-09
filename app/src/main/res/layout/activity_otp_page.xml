@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verify Your Number"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="100dp" />
+
+    <TextView
+        android:id="@+id/instructionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter the 6-digit code sent to"
+        android:textSize="16sp"
+        android:textColor="#666666"
+        app:layout_constraintTop_toBottomOf="@id/titleText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/phoneNumberText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+639****5015"
+        android:textSize="16sp"
+        android:textColor="#2196F3"
+        app:layout_constraintTop_toBottomOf="@id/instructionText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <LinearLayout
+        android:id="@+id/codeBoxesLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/phoneNumberText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp">
+
+        <EditText
+            android:id="@+id/codeBox1"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:background="@drawable/code_box_background"
+            android:layout_marginEnd="8dp" />
+
+        <EditText
+            android:id="@+id/codeBox2"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:background="@drawable/code_box_background"
+            android:layout_marginEnd="8dp" />
+
+        <EditText
+            android:id="@+id/codeBox3"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:background="@drawable/code_box_background"
+            android:layout_marginEnd="8dp" />
+
+        <EditText
+            android:id="@+id/codeBox4"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:background="@drawable/code_box_background"
+            android:layout_marginEnd="8dp" />
+
+        <EditText
+            android:id="@+id/codeBox5"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:background="@drawable/code_box_background"
+            android:layout_marginEnd="8dp" />
+
+        <EditText
+            android:id="@+id/codeBox6"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:background="@drawable/code_box_background" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/timerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Code expires in 59s"
+        android:textSize="14sp"
+        android:textColor="#666666"
+        app:layout_constraintTop_toBottomOf="@id/codeBoxesLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/resendCodeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resend Code"
+        android:textSize="14sp"
+        android:textColor="#2196F3"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintTop_toBottomOf="@id/timerText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/verifyButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Verify"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/verify_button_background"
+        app:layout_constraintTop_toBottomOf="@id/resendCodeText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="32dp"
+        android:padding="12dp" />
+
+    <TextView
+        android:id="@+id/securityNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This verification helps us keep your account secure"
+        android:textSize="12sp"
+        android:textColor="#999999"
+        app:layout_constraintTop_toBottomOf="@id/verifyButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
